@@ -12,7 +12,7 @@ func FtoC(f float64) float64 {
 	return (f - 32) * (9 / 5)
 }
 
-//私有方法，外部不应该调用
+//私有方法，外部不能调用
 func privateFunc() string {
 	return "i am private func,not call me"
 }
