@@ -1,3 +1,0 @@
-.baidu.com
-.sina.com
-.qq.com

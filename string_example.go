@@ -57,9 +57,26 @@ func StringOperations() {
 	fmt.Println(strings.Index(s1, "ll"))
 }
 
+//字符串数组拼接为字符串
+func ArrayJoin() {
+	arr := []string{"a", "b", "c"}
+	fmt.Println(strings.Join(arr, ""))
+}
+
+func ByteConvert() {
+	s := "sunaihua"
+	// 将字符串转换为byte数组
+	bs := []byte(s)
+	fmt.Println(bs)
+	//byte数组转为str
+	fmt.Print(string(bs))
+}
+
 func main() {
 	//StringType()
 	//	StringConcat()
 	//	StringCode()
-	StringOperations()
+	//StringOperations()
+	//ArrayJoin()
+	ByteConvert()
 }
