@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+// 主要用来演示go语言中的控制结构，if/else,switch,for等
+
 func if_else_sample() {
 	con1 := 10
 	// else if 与else必须要与{符号在同一行

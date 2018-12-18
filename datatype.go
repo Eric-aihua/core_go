@@ -6,6 +6,8 @@ import (
 	"strconv"
 )
 
+// 主要用来对go语言中的数据类型进行说明
+
 func types_sample() {
 	var b bool
 	fmt.Println(b)
