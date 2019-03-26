@@ -65,6 +65,6 @@ func b() {
 func main() {
 	//	if_else_sample()
 	//	switch_sample()
-	//	for_sample()
-	b()
+		for_sample()
+	//b()
 }

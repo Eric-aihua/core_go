@@ -9,12 +9,39 @@ func return_single_value(x int, y int) int {
 	return x + y
 }
 
+//返回数组
+func returnArray() []int{
+	a := make([]int,2)
+	b := []int{1,2}
+	a[0]=1
+	a[2]=2
+	//return a
+	return b
+}
+
 //多返回值
 func returnMultiValue() (string, int) {
 	s := "string result"
 	i := 3
 	return s, i
 }
+
+
+//返回字典
+func ReturnMap()  map[string][]string{
+	relationGraph  := make(map[string][]string)
+	relationGraph["you"] = []string{"alice", "bob", "claire"}
+	relationGraph["bob"] = []string{"anuj", "peggy"}
+	relationGraph["alice"] = []string{"peggy"}
+	relationGraph["claire"] = []string{"thom", "jonny"}
+	relationGraph["anuj"] = []string{}
+	relationGraph["peggy"] = []string{}
+	relationGraph["thom"] = []string{}
+	relationGraph["jonny"] = []string{}
+	//fmt.Println(relationGraph)
+	return relationGraph
+}
+
 
 //通过三个点来表达多个参数
 func multiParam(numbers ...int) {

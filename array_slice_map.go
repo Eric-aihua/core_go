@@ -53,8 +53,20 @@ func map_sample() {
 	fmt.Println(dict)
 }
 
+//value是array的map
+func ArrayMap() {
+	x := make(map[string][]string)
+
+	x["key"] = append(x["key"], "value")
+	x["key"] = append(x["key"], "value1")
+
+	fmt.Println(x["key"][0])
+	fmt.Println(x["key"][1])
+}
+
 func main() {
-	array_sample()
+	//array_sample()
 	//	slice_sample()
 	//	map_sample()
+	ArrayMap()
 }

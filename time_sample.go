@@ -7,11 +7,11 @@ import (
 )
 
 func main() {
-	//printNow()
+	printNow()
 	//sleep()
 	//timeoutSample()
 	//ticker()
-	format()
+	//format()
 }
 
 func format() {
@@ -61,6 +61,7 @@ func sleep() {
 
 //打印时间
 func printNow() {
+	fmt.Println(time.Now().Format("2006-01-02-15"))
 	fmt.Printf("%v\n", time.Now())                  //打印当前时间
 	fmt.Printf("%v\n", time.Now().Unix())           //打印时间戳
 	fmt.Printf("%v\n", time.Now().AddDate(0, 1, 0)) //当前时间加一个月
