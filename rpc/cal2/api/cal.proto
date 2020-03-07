@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package cal;
+
+service Cal {
+    // add elements
+    rpc Add (InputElement) returns (OutputElement) {}
+    // sub elements
+    rpc Sub (InputElement) returns (OutputElement) {}
+}
+
+message InputElement{
+    int32 input1 = 1;
+    int32 input2 = 2;
+}
+
+message OutputElement{
+    int32 output = 1;
+}
+
+
